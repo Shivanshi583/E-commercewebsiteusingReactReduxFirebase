@@ -64,7 +64,7 @@ const Home = () => {
                voluptatibus consequatur aut sint voluptatem.
 
        </p>
-       <motion.button  whileTap={{scale:1.2}} className="shop__btn"><Link className="tag" to="shop">SHOP NOW</Link></motion.button>
+       <motion.button  whileTap={{scale:1.2}} className="shop__btn"><Link className="tag" to="/shop">SHOP NOW</Link></motion.button>
         </div>
         </Col>
         <Col lg="6" md="6">

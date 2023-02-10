@@ -5,6 +5,7 @@
     border-radius: 5px;
     background: var(--primary-color);
     color: #fff;
+    
 }
 
 .filter__products select:focus{
@@ -25,6 +26,7 @@
     border-radius: 5px;
     padding-right: 12px;
     padding-left: 2px;
+    margin-top: 5px
 }
 
 .search__box input{
@@ -35,4 +37,14 @@
 }
 .search__box span{
     color: var(--primary-color);
+}
+
+@media only screen and (max-width:768px){
+    .filter__products{
+        margin-bottom: 30px;
+    }
+    .filter__products select{
+        padding: 7px 20px;
+        font-size: 0.9rem;
+    }
 }

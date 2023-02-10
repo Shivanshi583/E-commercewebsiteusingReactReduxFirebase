@@ -7,13 +7,18 @@ import ProductDetails from '../Pages/ProductDetails';
 import Login from '../Pages/Login';
 import Shop from '../Pages/Shop';
 import Signup from '../Pages/Signup';
+import ProtectedRoute from './ProtectedRoute';
 
 const Routers = () => {
   return <Routes>
      <Route path='/' element={<Navigate to='home'/>}/> 
     <Route path='home' element={<Home/>}/>
     <Route path='cart' element={<Cart/>}/>
-    <Route path='checkout' element={<Checkout/>}/>
+    <Route path='checkout' element={
+      <ProtectedRoute>
+         <Checkout/>
+      </ProtectedRoute>
+   }/>
     <Route path='login' element={<Login/>}/>
     <Route path='signup' element={<Signup/>}/>
     <Route path='shop' element={<Shop/>}/>

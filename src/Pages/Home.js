@@ -20,26 +20,21 @@ const Home = () => {
   const [popularProducts,setPopularProducts] = useState([]);
   const year =new Date().getFullYear();
   useEffect(()=>{
-  const filteredTrendingProducts = products.
-    filter(item=>
-       item.category =="chair");
+  const filteredTrendingProducts = products.filter(item=>
+       item.category ==="chair");
    
-  const filteredBestSalesProducts = products.
-   filter(item=>
-     item.category=="sofa");
+  const filteredBestSalesProducts = products.filter(item=>
+     item.category==="sofa");
 
-  const filteredMobileProducts = products.
-    filter(item=>
-      item.category=='mobile'
+  const filteredMobileProducts = products.filter(item=>
+      item.category==='mobile'
     );
-    const filteredWirelessProducts = products.
-    filter(item=>
-      item.category=='wireless'
+    const filteredWirelessProducts = products.filter(item=>
+      item.category==='wireless'
     );
 
-   const filteredPopularProducts =products.
-   filter(item=>
-    item.category=='watch'
+   const filteredPopularProducts =products.filter(item=>
+    item.category==='watch'
     );
  setTrendingProducts(filteredTrendingProducts);
  setBestSalesProducts(filteredBestSalesProducts);

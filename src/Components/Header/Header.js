@@ -52,8 +52,7 @@ const Header = () => {
 
   const stickyHeaderFunc =() =>{
     window.addEventListener('scroll',()=>{
-      if(document.body.scrollTop >80 || document.documentElement.scrollTop
-        >80){
+      if(document.body.scrollTop >80 || document.documentElement.scrollTop>80){
           headRef.current.classList.add("sticky__header")
         }
         else{
@@ -65,7 +64,7 @@ const Header = () => {
   const logout= ()=>{
     signOut(auth).then(()=>{
       toast.success('Logged out');
-      navigate('/home')
+      navigate('/home');
     }).catch(err=>{
       toast.error(err.message);
     });
@@ -77,10 +76,8 @@ const Header = () => {
 
   });
 
-  const menuToggle =() => menuRef.current.classList.
-  toggle('active__menu');
-  const toggleProfileActions =()=>profileActionRef.current.classList.
-  toggle('show__profile');
+  const menuToggle =() => menuRef.current.classList.toggle('active__menu');
+  const toggleProfileActions =()=>profileActionRef.current.classList.toggle('show__profile');
 
   return <header className='header' ref={headRef}>
         <Container>

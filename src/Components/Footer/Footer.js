@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container,Row,Col,ListGroup,ListGroupItem} from 
 'reactstrap';
-import logo from "../../Assets/Images/eco-logo.png";
+
 import './footer.css';
 import { Link } from 'react-router-dom';
 
